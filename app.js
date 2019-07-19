@@ -25,7 +25,7 @@ var geocoder = NodeGeocoder(options);
 //mongodb://localhost/yelp_camp
 //mongodb+srv://sanskar:Gopikirotia%231@cluster0-dzqww.mongodb.net/test?retryWrites=true&w=majority
 //mongodb+srv://sanskaragg:gopikiroti@cluster0-frbcf.mongodb.net/test?retryWrites=true&w=majority
-mongoose.connect("mongodb+srv://sanskaragg:gopikiroti@cluster0-frbcf.mongodb.net/test?retryWrites=true&w=majority",{ 
+mongoose.connect("mongodb://colt:rusty@ds055525.mongolab.com:55525/yelpcamp",{ 
     useNewUrlParser: true
 }).then(() => {
     console.log("Connected to DB!");
