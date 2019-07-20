@@ -26,7 +26,8 @@ var geocoder = NodeGeocoder(options);
 //mongodb+srv://sanskar:Gopikirotia%231@cluster0-dzqww.mongodb.net/test?retryWrites=true&w=majority
 //mongodb+srv://sanskaragg:gopikiroti@cluster0-frbcf.mongodb.net/test?retryWrites=true&w=majority
 mongoose.connect("mongodb+srv://sanskaragg:gopikiroti@cluster0-frbcf.mongodb.net/test?retryWrites=true&w=majority",{ 
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useCreateIndex: true
 }).then(() => {
     console.log("Connected to DB!");
 }).catch(err => {
@@ -301,6 +302,8 @@ function checkCommentOwnership(req, res, next){
     }
 }
 
-app.listen(process.env.PORT, process.env.IP, function(){
+//process.env.PORT, process.env.IP
+
+app.listen(3000, function(){
 	console.log("Server is on");
 });
